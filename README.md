@@ -1,58 +1,238 @@
 # 🏎️ F1 Race Replay
 
-A Python app that animates real F1 race and qualifying sessions using live telemetry data. Watch all drivers move around the circuit in real time, with a live leaderboard showing positions and tyre compounds.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![FastF1](https://img.shields.io/badge/Data-FastF1-red)
+![Matplotlib](https://img.shields.io/badge/Visualization-Matplotlib-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue) ![FastF1](https://img.shields.io/badge/FastF1-latest-red)
-
----
-
-## Features
-
-- 🗺️ **Animated track map** — all drivers plotted simultaneously with team colours
-- 📋 **Live leaderboard** — updates in real time with position and tyre compound
-- ⏱️ **Session timer** — shows elapsed race/qualifying time
-- ⌨️ **Keyboard controls** — pause, rewind and fast-forward the replay
-- 🏁 **Any session** — works for Race, Qualifying, and more
+> A Python-based Formula 1 race replay simulator that visualizes real F1 telemetry and timing data. Watch every driver move around the circuit in real time while tracking positions, tyre compounds, and race progression through a live leaderboard.
 
 ---
 
-## Controls
+# 🏁 Project Highlights
 
-| Key | Action |
-|-----|--------|
-| `Space` | Pause / Resume |
-| `→` Right Arrow | Skip forward |
-| `←` Left Arrow | Skip backward |
+- 🏎️ Real Formula 1 Telemetry Visualization
+- 📡 FastF1 API Integration
+- 🗺️ Live Track Mapping
+- 🎞️ Real-Time Replay Engine
+- 📋 Dynamic Leaderboard
+- 🛞 Tyre Compound Tracking
+- ⏱️ Session Time Synchronization
+- ⌨️ Interactive Replay Controls
 
 ---
 
-## Setup
+# 🎯 Why This Project?
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/YOUR_USERNAME/f1-race-replay.git
-cd f1-race-replay
+Formula 1 generates enormous amounts of telemetry and timing data during every session.
+
+This project transforms raw race data into an interactive replay experience, allowing users to:
+
+- Visualize driver movement around the circuit
+- Analyze race progression in real time
+- Track driver positions throughout a session
+- Monitor tyre strategies and race dynamics
+- Explore Formula 1 telemetry in a visual and intuitive way
+
+---
+
+# 🧩 Project Overview
+
+```mermaid
+mindmap
+  root((F1 Race Replay))
+    Data Collection
+      FastF1 API
+      Telemetry Data
+      Timing Data
+      Session Data
+    Processing
+      Driver Coordinates
+      Lap Information
+      Track Mapping
+    Replay Engine
+      Position Updates
+      Frame Generation
+      Time Synchronization
+    Visualization
+      Track Map
+      Driver Markers
+      Leaderboard
+      Tyre Data
+    Controls
+      Pause
+      Rewind
+      Fast Forward
 ```
 
-### 2. Install dependencies
+---
+
+# 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+
+    U[👤 User]
+
+    U --> M[🏁 Session Selection]
+
+    M --> F[📡 FastF1 Data Fetcher]
+
+    F --> P[📊 Telemetry Processor]
+
+    P --> T[🗺️ Track Coordinate Mapper]
+
+    T --> R[🎞️ Replay Engine]
+
+    R --> V[📈 Visualization Layer]
+
+    V --> L[📋 Live Leaderboard]
+
+    V --> D[🏎️ Driver Position Renderer]
+
+    L --> U
+    D --> U
+```
+
+---
+
+# 🔄 Replay Workflow
+
+```mermaid
+sequenceDiagram
+
+    participant User
+    participant FastF1
+    participant Processor
+    participant Replay
+    participant Display
+
+    User->>FastF1: Select Session
+
+    FastF1->>Processor: Load Telemetry Data
+
+    Processor->>Processor: Extract Driver Coordinates
+
+    Processor->>Replay: Generate Replay Frames
+
+    Replay->>Display: Update Driver Positions
+
+    Replay->>Display: Update Leaderboard
+
+    Display-->>User: Render Replay
+```
+
+---
+
+# 🧠 Replay Engine Pipeline
+
+```mermaid
+flowchart LR
+
+A[Session Selection]
+--> B[Fetch Telemetry]
+
+B --> C[Extract Coordinates]
+
+C --> D[Calculate Driver Positions]
+
+D --> E[Generate Animation Frames]
+
+E --> F[Update Leaderboard]
+
+F --> G[Render Replay]
+```
+
+---
+
+# ✨ Features
+
+### 🗺️ Animated Track Map
+
+Displays all drivers moving simultaneously around the circuit using team colours.
+
+### 📋 Live Leaderboard
+
+Updates race positions and tyre compounds in real time.
+
+### ⏱️ Session Timer
+
+Shows elapsed race or qualifying session time.
+
+### ⌨️ Interactive Replay Controls
+
+Pause, rewind, and fast-forward the replay.
+
+### 🏁 Multi-Session Support
+
+Supports:
+
+- Race Sessions
+- Qualifying Sessions
+- Sprint Sessions
+- Practice Sessions
+
+---
+
+# 🎮 Controls
+
+| Key | Action |
+|------|----------|
+| Space | Pause / Resume |
+| → Right Arrow | Skip Forward |
+| ← Left Arrow | Skip Backward |
+
+---
+
+# 🖥️ Demo
+
+Add screenshots or a GIF here.
+
+```markdown
+
+
+
+
+```
+
+Or:
+
+```markdown
+![Replay Screenshot](screenshot.png)
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/p4janhavi-creator/F1-Race-Replay.git
+cd F1-Race-Replay
+```
+
+## Install Dependencies
+
 ```bash
 pip install fastf1 matplotlib
 ```
 
-### 3. Run the app
+## Run Application
+
 ```bash
 python main.py
 ```
 
 ---
 
-## Usage
+# 🚀 Usage
 
-When you run the app, you'll be prompted to enter:
+When the application starts:
 
-```
+```text
 ========================================
-       F1 RACE REPLAY
+          F1 RACE REPLAY
 ========================================
 
 Enter year (e.g. 2023): 2023
@@ -60,32 +240,77 @@ Enter race name (e.g. Monaco): Monaco
 Enter session (R = Race, Q = Qualifying): R
 ```
 
-The replay window will open and start animating automatically.
+The replay window will open automatically and begin animating the selected session.
 
 ---
 
-## Project Structure
+# 📂 Project Structure
 
+```text
+F1-Race-Replay
+│
+├── main.py         # Main application entry point
+├── replay.py       # Replay engine
+├── track.py        # Track visualization
+├── fetch_data.py   # Telemetry data fetching
+├── menu.py         # User input interface
+├── cache/          # FastF1 cached session data
+└── README.md
 ```
-f1-race-replay/
-├── main.py        # Entry point — menu + replay logic
-├── replay.py      # Standalone replay script (Monaco 2023)
-├── track.py       # Simple track map visualiser
-├── fetch_data.py  # Data exploration / testing script
-├── menu.py        # Standalone menu script
-└── .gitignore
-```
 
 ---
 
-## Dependencies
+# 🔧 Dependencies
 
-- [FastF1](https://docs.fastf1.dev/) — F1 telemetry and timing data
-- [Matplotlib](https://matplotlib.org/) — Visualisation and animation
+### FastF1
+
+Provides official Formula 1 telemetry and timing data.
+
+### Matplotlib
+
+Used for track rendering, animation, and leaderboard visualization.
 
 ---
 
-## Notes
+# 📚 Learning Outcomes
 
-- FastF1 caches session data in a `cache/` folder on first load — subsequent runs are much faster
-- Data is sourced from the official F1 timing feed via FastF1
+This project demonstrates:
+
+- Python Application Development
+- Data Visualization
+- Sports Analytics
+- Telemetry Processing
+- API Integration
+- Real-Time Animation
+- Simulation Systems
+- Event-Driven Programming
+
+---
+
+# 🚀 Future Enhancements
+
+- 📊 Lap Time Analytics Dashboard
+- 🛞 Pit Stop Visualization
+- 📈 Sector Time Comparisons
+- 🏎️ Driver Battle Detection
+- 🎥 Export Replay as Video
+- 🌐 Interactive Web Version
+- 🤖 AI-Powered Race Insights
+
+---
+
+# 👩‍💻 Author
+
+**Janhavi Patil**
+
+BE Artificial Intelligence & Data Science
+
+Passionate about AI, Data Analytics, Motorsport Technology, and Building Interactive Software Systems.
+
+---
+
+# ⭐ Support
+
+If you enjoyed this project, consider giving it a ⭐ on GitHub!
+
+It helps others discover the project and motivates future improvements. 🏎️💨
