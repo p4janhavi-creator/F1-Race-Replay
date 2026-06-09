@@ -7,18 +7,24 @@
 
 > A Python-based Formula 1 race replay simulator that visualizes real F1 telemetry and timing data. Watch every driver move around the circuit in real time while tracking positions, tyre compounds, and race progression through a live leaderboard.
 
+## 🎬 Demo
+
+<p align="center">
+  <img src="Draft 1.gif" width="900">
+</p>
+
 ---
 
 # 🏁 Project Highlights
 
-- 🏎️ Real Formula 1 Telemetry Visualization
-- 📡 FastF1 API Integration
-- 🗺️ Live Track Mapping
-- 🎞️ Real-Time Replay Engine
-- 📋 Dynamic Leaderboard
-- 🛞 Tyre Compound Tracking
-- ⏱️ Session Time Synchronization
-- ⌨️ Interactive Replay Controls
+* 🏎️ Real Formula 1 Telemetry Visualization
+* 📡 FastF1 API Integration
+* 🗺️ Live Track Mapping
+* 🎞️ Real-Time Replay Engine
+* 📋 Dynamic Leaderboard
+* 🛞 Tyre Compound Tracking
+* ⏱️ Session Time Synchronization
+* ⌨️ Interactive Replay Controls
 
 ---
 
@@ -28,11 +34,17 @@ Formula 1 generates enormous amounts of telemetry and timing data during every s
 
 This project transforms raw race data into an interactive replay experience, allowing users to:
 
-- Visualize driver movement around the circuit
-- Analyze race progression in real time
-- Track driver positions throughout a session
-- Monitor tyre strategies and race dynamics
-- Explore Formula 1 telemetry in a visual and intuitive way
+* Visualize driver movement around the circuit
+* Analyze race progression in real time
+* Track driver positions throughout a session
+* Monitor tyre strategies and race dynamics
+* Explore Formula 1 telemetry in a visual and intuitive way
+
+---
+
+# 📌 Technical Summary
+
+Developed a Python-based Formula 1 race replay simulator using FastF1 telemetry data and Matplotlib visualization. The system processes real-world race timing and positional data, generates synchronized replay frames, renders live driver movement on circuit maps, and displays race standings with tyre information in real time.
 
 ---
 
@@ -167,39 +179,20 @@ Pause, rewind, and fast-forward the replay.
 
 Supports:
 
-- Race Sessions
-- Qualifying Sessions
-- Sprint Sessions
-- Practice Sessions
+* Race Sessions
+* Qualifying Sessions
+* Sprint Sessions
+* Practice Sessions
 
 ---
 
 # 🎮 Controls
 
-| Key | Action |
-|------|----------|
-| Space | Pause / Resume |
-| → Right Arrow | Skip Forward |
-| ← Left Arrow | Skip Backward |
-
----
-
-# 🖥️ Demo
-
-Add screenshots or a GIF here.
-
-```markdown
-
-
-
-
-```
-
-Or:
-
-```markdown
-![Replay Screenshot](screenshot.png)
-```
+| Key           | Action         |
+| ------------- | -------------- |
+| Space         | Pause / Resume |
+| → Right Arrow | Skip Forward   |
+| ← Left Arrow  | Skip Backward  |
 
 ---
 
@@ -276,26 +269,26 @@ Used for track rendering, animation, and leaderboard visualization.
 
 This project demonstrates:
 
-- Python Application Development
-- Data Visualization
-- Sports Analytics
-- Telemetry Processing
-- API Integration
-- Real-Time Animation
-- Simulation Systems
-- Event-Driven Programming
+* Python Application Development
+* Data Visualization
+* Sports Analytics
+* Telemetry Processing
+* API Integration
+* Real-Time Animation
+* Simulation Systems
+* Event-Driven Programming
 
 ---
 
 # 🚀 Future Enhancements
 
-- 📊 Lap Time Analytics Dashboard
-- 🛞 Pit Stop Visualization
-- 📈 Sector Time Comparisons
-- 🏎️ Driver Battle Detection
-- 🎥 Export Replay as Video
-- 🌐 Interactive Web Version
-- 🤖 AI-Powered Race Insights
+* 📊 Lap Time Analytics Dashboard
+* 🛞 Pit Stop Visualization
+* 📈 Sector Time Comparisons
+* 🏎️ Driver Battle Detection
+* 🎥 Export Replay as Video
+* 🌐 Interactive Web Version
+* 🤖 AI-Powered Race Insights
 
 ---
 
@@ -305,7 +298,7 @@ This project demonstrates:
 
 BE Artificial Intelligence & Data Science
 
-Passionate about AI, Data Analytics, Motorsport Technology, and Building Interactive Software Systems.
+Passionate about Artificial Intelligence, Data Science, Software Engineering, Data Visualization, and Motorsport Analytics.
 
 ---
 
@@ -314,3 +307,4 @@ Passionate about AI, Data Analytics, Motorsport Technology, and Building Interac
 If you enjoyed this project, consider giving it a ⭐ on GitHub!
 
 It helps others discover the project and motivates future improvements. 🏎️💨
+
